@@ -10,6 +10,9 @@
 // so we have to do this for avoid the strict standard error.
 date_default_timezone_set('UTC');
 
+//JMLRT
+ini_set('session.save_path', $_SERVER['DOCUMENT_ROOT'].'/sessions');
+
 // -----------------------------------------------------------------------------------------------
 // Hardcoded parameter (These parameters can be overwritten by creating the file /config/options.php)
 $GLOBALS['config']['DATADIR'] = 'data'; // Data subdirectory
